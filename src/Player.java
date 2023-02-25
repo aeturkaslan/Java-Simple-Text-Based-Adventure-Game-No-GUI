@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Player {
-	private int damage, health, money;
+	private int damage, health, money, fullHealth;
 	private String name, cName;
 	private Inventory inv;
 	Scanner scan = new Scanner(System.in);
@@ -17,6 +17,7 @@ public class Player {
 			setDamage(5);
 			setHealth(21);
 			setMoney(15);
+			setFullHealth(health);
 			
 			System.out.println("You chose to be a(n) " + getcName());
 			System.out.println("Stats: \t Damage: " + getDamage() + "\t Health: " + getHealth() + "\t Money: " + getMoney());
@@ -28,6 +29,7 @@ public class Player {
 			setDamage(7);
 			setHealth(18);
 			setMoney(20);
+			setFullHealth(health);
 			
 			System.out.println("You chose to be a(n) " + getcName());
 			System.out.println("Stats: \t Damage: " + getDamage() + "\t Health: " + getHealth() + "\t Money: " + getMoney());
@@ -39,6 +41,7 @@ public class Player {
 			setDamage(8);
 			setHealth(24);
 			setMoney(5);
+			setFullHealth(health);
 			
 			System.out.println("You chose to be a(n) " + getcName());
 			System.out.println("Stats: \t Damage: " + getDamage() + "\t Health: " + getHealth() + "\t Money: " + getMoney());
@@ -50,6 +53,7 @@ public class Player {
 			setDamage(5);
 			setHealth(21);
 			setMoney(15);
+			setFullHealth(health);
 			
 			System.out.println("Your character is created as " + getcName() + " by default");
 			System.out.println("Stats: \t Damage: " + getDamage() + "\t Health: " + getHealth() + "\t Money: " + getMoney());
@@ -120,6 +124,14 @@ public class Player {
 
 	public void setInv(Inventory inv) {
 		this.inv = inv;
+	}
+
+	public int getFullHealth() {
+		return fullHealth;
+	}
+
+	public void setFullHealth(int fullHealth) {
+		this.fullHealth = fullHealth;
 	}
 	
 	
