@@ -10,6 +10,7 @@ public class Game {
 		System.out.println("Please Enter Your Name: ");
 		String playerName = scan.nextLine();
 		player = new Player(playerName);
+		player.selectCha();
 	}
 
 }
