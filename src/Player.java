@@ -78,6 +78,11 @@ public class Player {
 		return chaID;
 
 	}
+	
+	//Damage after buying weapon.
+	public int getTotalDamage() {
+		return this.getDamage() + this.getInv().getDamage();
+	}
 
 	public int getDamage() {
 		return damage;
