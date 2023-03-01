@@ -43,6 +43,14 @@ public class Game {
 				location = new Cave(player);
 				break;
 				
+			case 3:
+				location = new Forest(player);
+				break;
+				
+			case 4:
+				location = new River(player);
+				break;
+				
 			case 5:
 				location = new ToolStore(player);
 				break;
