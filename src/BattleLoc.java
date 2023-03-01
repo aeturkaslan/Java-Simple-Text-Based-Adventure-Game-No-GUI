@@ -62,7 +62,7 @@ public abstract class BattleLoc extends Location {
 						afterHit();
 					}
 				} else {
-					break;
+					return false;
 				}
 			}
 

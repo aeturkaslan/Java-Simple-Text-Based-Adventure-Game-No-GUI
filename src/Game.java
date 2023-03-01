@@ -59,6 +59,11 @@ public class Game {
 				location = new SafeHouse(player);
 			}
 			
+			if (location.getClass().getName().equals("SafeHouse")) {
+				if (player.getInv().isFirewood() && player.getInv().isFood() && player.getInv().isWater()) {
+					System.out.println("Congratulations! You've won the game!");
+				}
+			}
 			if(!location.getLocation()){
 				System.out.println("Game Over!");
 				break;
